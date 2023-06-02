@@ -10,10 +10,15 @@ const CartProvider = props => {
 
     const removeItemFromCartHandler = id => { }
 
+    const updateCartItems = (updatedItems) => {
+        updateItems(updatedItems);
+    };
+
     const cartContext = {
         items: items,
         addItem: addItemToCartHandler,
         removeItem: removeItemFromCartHandler,
+        updateCartItems: updateCartItems,
         message: "Hii"
     }
 
