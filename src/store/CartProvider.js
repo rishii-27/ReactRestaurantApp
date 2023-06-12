@@ -10,8 +10,8 @@ const CartProvider = props => {
 
     const removeItemFromCartHandler = id => { }
 
-    const updateCartItems = (updatedItems) => {
-        updateItems(updatedItems);
+    const updateCartItems = (quantity) => {
+        updateItems(quantity);
     };
 
     const cartContext = {
